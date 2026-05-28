@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kotachi_maru | リハビリ試験対策アプリ</title>
+<meta property="og:title" content="kotachi_maru | リハビリ試験対策アプリ">
+<meta property="og:description" content="理学療法士による試験対策問題集アプリ。まず10問無料で試せます。">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:     #0a0f23;
+    --card:   #111827;
+    --border: rgba(255,255,255,.08);
+    --text:   #e2e8f0;
+    --muted:  #64748b;
+    --blue:   #3b82f6;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px;
+  }
+
+  /* ── 背景グラデーション ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59,130,246,.18), transparent);
+    pointer-events: none;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 430px;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  /* ── プロフィール ── */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0 28px;
+    gap: 12px;
+  }
+
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px rgba(59,130,246,.5);
+  }
+
+  .profile-name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  .profile-handle {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .profile-bio {
+    font-size: 13px;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 300px;
+  }
+
+  .profile-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: rgba(59,130,246,.15);
+    color: #93c5fd;
+    border: 1px solid rgba(59,130,246,.3);
+  }
+
+  /* ── セクションヘッダー ── */
+  .section-title {
+    font-size: 11px;
+    letter-spacing: .1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin: 28px 0 12px;
+  }
+
+  /* ── 商品カード ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 18px 14px;
+    margin-bottom: 12px;
+    transition: transform .15s, box-shadow .15s;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .card-info { flex: 1; min-width: 0; }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 9px 4px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity .15s, transform .1s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn:active { transform: scale(.97); }
+
+  .btn-demo {
+    background: rgba(34,197,94,.15);
+    color: #4ade80;
+    border: 1px solid rgba(34,197,94,.3);
+  }
+
+  .btn-demo:hover { background: rgba(34,197,94,.25); }
+
+  .btn-note {
+    background: rgba(59,130,246,.15);
+    color: #93c5fd;
+    border: 1px solid rgba(59,130,246,.3);
+  }
+
+  .btn-note:hover { background: rgba(59,130,246,.25); }
+
+  /* 近日公開 */
+  .card.coming {
+    opacity: .6;
+  }
+
+  .coming-badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 16px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ── SNS リンク ── */
+  .sns-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sns-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--text);
+    background: rgba(255,255,255,.06);
+    border: 1px solid var(--border);
+    transition: background .15s;
+  }
+
+  .sns-btn:hover { background: rgba(255,255,255,.12); }
+
+  /* ── フッター ── */
+  footer {
+    margin-top: 40px;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- プロフィール -->
+  <div class="profile">
+    <div class="avatar">🩺</div>
+    <div class="profile-name">kotachi_maru</div>
+    <div class="profile-handle">@kotachi_maru</div>
+    <div class="profile-bio">
+      大学病院 理学療法士<br>
+      ダブルライセンス取得の経験をもとに<br>
+      リハビリ系資格試験の対策アプリを開発中
+    </div>
+    <div class="profile-badges">
+      <span class="badge">心リハ指導士</span>
+      <span class="badge">腎リハ指導士</span>
+      <span class="badge">呼吸療法認定士</span>
+    </div>
+  </div>
+
+  <!-- 試験対策アプリ -->
+  <div class="section-title">📱 試験対策アプリ</div>
+
+  <!-- 商品データ（追加はここに） -->
+  <div id="products"></div>
+
+  <!-- SNS -->
+  <div class="section-title">🔗 SNS</div>
+  <div class="sns-links">
+    <a href="https://www.instagram.com/kotachi_maru" class="sns-btn" target="_blank">
+      📸 Instagram
+    </a>
+    <a href="https://x.com/kotachi_maru" class="sns-btn" target="_blank">
+      𝕏 X (Twitter)
+    </a>
+    <a href="https://note.com/kotachi" class="sns-btn" target="_blank">
+      📝 note
+    </a>
+  </div>
+
+  <footer>
+    まず10問、無料でお試しいただけます<br>
+    登録・インストール不要 / ブラウザで即利用可
+  </footer>
+
+</div>
+
+<script>
+// =============================================
+// ▼▼▼ 商品を追加するときはここだけ編集 ▼▼▼
+// =============================================
+const PRODUCTS = [
+  {
+    title: "心臓リハビリテーション指導士",
+    short: "心リハ",
+    icon: "❤️‍🔥",
+    iconBg: "rgba(239,68,68,.2)",
+    questions: 220,
+    status: "live",          // "live" | "coming"
+    demoUrl: "https://kotachimaru.github.io/shinriha/",
+    noteUrl: "https://note.com/kotachi/n/n40ae3b3ff320",
+    price: "¥2,000 / 月額¥980",
+  },
+  {
+    title: "腎臓リハビリテーション指導士",
+    short: "腎リハ",
+    icon: "🫘",
+    iconBg: "rgba(139,92,246,.2)",
+    questions: 220,
+    status: "live",
+    demoUrl: "https://kotachimaru.github.io/jinriha/",
+    noteUrl: "https://note.com/kotachi/n/n226067c84223",
+    price: "¥2,000 / 月額¥980",
+  },
+  {
+    title: "3学会合同呼吸療法認定士",
+    short: "呼吸療法",
+    icon: "🫁",
+    iconBg: "rgba(6,182,212,.2)",
+    questions: 220,
+    status: "live",
+    demoUrl: "https://kotachimaru.github.io/kokyuriha/",
+    noteUrl: "https://note.com/kotachi/n/nadeb466f7aba",
+    price: "¥2,000 / 月額¥980",
+  },
+  // ── 追加予定の例 ──
+  // {
+  //   title: "心不全療養指導士",
+  //   short: "心不全",
+  //   icon: "💊",
+  //   iconBg: "rgba(245,158,11,.2)",
+  //   questions: 200,
+  //   status: "coming",
+  //   demoUrl: "",
+  //   noteUrl: "",
+  //   price: "",
+  // },
+];
+// =============================================
+// ▲▲▲ ここまで ▲▲▲
+// =============================================
+
+const container = document.getElementById('products');
+
+PRODUCTS.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'card' + (p.status === 'coming' ? ' coming' : '');
+
+  const actions = p.status === 'live'
+    ? `<div class="card-actions">
+        <a href="${p.demoUrl}" class="btn btn-demo" target="_blank">
+          ▶ 無料デモ
+        </a>
+        <a href="${p.noteUrl}" class="btn btn-note" target="_blank">
+          📝 購入する
+        </a>
+       </div>`
+    : `<span class="coming-badge">🔜 近日公開予定</span>`;
+
+  card.innerHTML = `
+    <div class="card-header">
+      <div class="card-icon" style="background:${p.iconBg}">${p.icon}</div>
+      <div class="card-info">
+        <div class="card-title">${p.title}</div>
+        <div class="card-meta">${p.questions}問収録 · ${p.price || ''}</div>
+      </div>
+    </div>
+    ${actions}
+  `;
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>
