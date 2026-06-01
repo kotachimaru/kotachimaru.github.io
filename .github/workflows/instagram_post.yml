@@ -1,0 +1,35 @@
+name: Instagram Auto Post
+
+on:
+  schedule:
+    - cron: '0 11 2 6 *'    # June 2  20:00 JST (火) 心リハ 問題解説リール
+    - cron: '0 11 3 6 *'    # June 3  20:00 JST (水) 心リハ カルーセル
+    - cron: '0 11 4 6 *'    # June 4  20:00 JST (木) 腎リハ アプリ紹介リール
+    - cron: '0 11 5 6 *'    # June 5  20:00 JST (金) 呼吸療法 アプリ紹介リール
+    - cron: '0 11 6 6 *'    # June 6  20:00 JST (土) 腎リハ 問題解説リール
+    - cron: '0 11 7 6 *'    # June 7  20:00 JST (日) 呼吸療法 問題解説リール
+    - cron: '0 11 8 6 *'    # June 8  20:00 JST (月) 腎リハ よく出る数字 カルーセル
+    - cron: '0 11 9 6 *'    # June 9  20:00 JST (火) 呼吸療法 よく出る数字 カルーセル
+    - cron: '0 11 10 6 *'   # June 10 20:00 JST (水) 心リハ Tipsカルーセル
+  workflow_dispatch:          # 手動実行（テスト用）
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Instagram post
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python .github/scripts/ig_post.py
