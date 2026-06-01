@@ -265,7 +265,43 @@ COPD患者の呼吸リハビリで
     ),
 }
 
+# ---- schedule.json からの投稿 ----
+def post_from_schedule(today_str):
+    """schedule.json を読んで本日分を投稿する"""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    schedule_path = os.path.join(script_dir, "..", "..", "schedule.json")
+    schedule_path = os.path.normpath(schedule_path)
+
+    if not os.path.exists(schedule_path):
+        return False
+
+    with open(schedule_path, encoding="utf-8") as f:
+        schedule_data = json.load(f)
+
+    if today_str not in schedule_data:
+        return False
+
+    entry = schedule_data[today_str]
+    label = entry.get("app_label", entry.get("app", ""))
+    print(f"=== {today_str} {label} 自動投稿 ===")
+
+    if entry["type"] == "carousel":
+        post_carousel(
+            entry["slides"],
+            entry["caption"],
+            f"{today_str} {label}"
+        )
+    elif entry["type"] == "reel":
+        post_reel(
+            entry["video_url"],
+            entry["caption"],
+            f"{today_str} {label}"
+        )
+    return True
+
 # ---- メイン ----
+import json as _json
+
 if __name__ == "__main__":
     # GitHub Actions は UTC で動くので JST (UTC+9) に変換
     now_jst = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
@@ -273,6 +309,11 @@ if __name__ == "__main__":
     print(f"現在時刻 (JST): {now_jst.strftime('%Y-%m-%d %H:%M')}")
     print(f"投稿日: {today_str}")
 
+    # 1. まず schedule.json（自動生成）を確認
+    if post_from_schedule(today_str):
+        sys.exit(0)
+
+    # 2. なければ固定スケジュール（現在の週分）を確認
     if today_str in SCHEDULE:
         SCHEDULE[today_str]()
     else:
