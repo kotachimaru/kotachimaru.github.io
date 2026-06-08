@@ -4,7 +4,7 @@ Instagram 自動投稿 ディスパッチャー
 GitHub Actions から呼び出される。環境変数 IG_TOKEN が必要。
 投稿日（JST）に基づいて該当するスクリプトの処理を実行する。
 """
-import os, sys, requests, time, datetime
+import os, sys, json, requests, time, datetime
 
 # ---- 設定 ----
 TOKEN = os.environ.get("IG_TOKEN", "IGAAqHMMXPrH1BZAGJwSTYzbTE5TjFFVUE5anJaZA2VjRjFzQmc3OFNVODh2eTQ2WGJuNjJBejktTHNyVzltLVVublNpZAUJjLW53MU1LaVBZAWktuVU9Vc2RMR1dKWUtZAT0FqUkl5cEdtT2xiMUNOTnJxMUttVDRUSFdaZA2xVeVhiSQZDZD")
