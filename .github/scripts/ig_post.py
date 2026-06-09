@@ -299,15 +299,36 @@ def post_from_schedule(today_str):
         )
     return True
 
-# ---- メイン ----
-import json as _json
+# ---- 二重投稿ガード ----
+def already_posted_today(today_str):
+    """本日(JST)すでに投稿済みなら True を返す。手動実行と定期実行の二重投稿を防ぐ。"""
+    try:
+        r = requests.get(f"{BASE}/{UID}/media",
+                         params={"fields": "timestamp", "limit": 5, "access_token": TOKEN})
+        for m in r.json().get("data", []):
+            ts = (m.get("timestamp") or "")[:19]  # 例: 2026-06-08T21:30:03 (UTC)
+            if not ts:
+                continue
+            dt_jst = datetime.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S") + datetime.timedelta(hours=9)
+            if dt_jst.strftime("%Y-%m-%d") == today_str:
+                return True
+    except Exception as e:
+        print(f"  投稿済みチェック失敗（続行）: {e}")
+    return False
 
+
+# ---- メイン ----
 if __name__ == "__main__":
     # GitHub Actions は UTC で動くので JST (UTC+9) に変換
     now_jst = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
     today_str = now_jst.strftime("%Y-%m-%d")
     print(f"現在時刻 (JST): {now_jst.strftime('%Y-%m-%d %H:%M')}")
     print(f"投稿日: {today_str}")
+
+    # 二重投稿ガード: 本日すでに投稿済みならスキップ
+    if already_posted_today(today_str):
+        print(f"本日（{today_str}）は既に投稿済みのためスキップします。")
+        sys.exit(0)
 
     # 1. まず schedule.json（自動生成）を確認
     if post_from_schedule(today_str):
