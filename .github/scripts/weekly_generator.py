@@ -53,6 +53,7 @@ WEEKDAY_TO_APP = {
 BASE_DIR   = Path(__file__).parent.parent.parent   # kotachimaru.github.io/
 SCHEDULE_F = BASE_DIR / "schedule.json"
 USED_F     = BASE_DIR / "used_questions.json"
+PENDING_F  = BASE_DIR / "pending_reels.json"        # 再利用待ちリール（消化制）
 CAROUSEL_D = BASE_DIR / "carousel"
 CAROUSEL_D.mkdir(exist_ok=True)
 
@@ -348,6 +349,50 @@ def load_used():
 def save_used(used):
     USED_F.write_text(json.dumps(used, ensure_ascii=False, indent=2))
 
+def load_pending_reels():
+    """再利用待ちのリール一覧を返す（無ければ空）"""
+    if PENDING_F.exists():
+        try:
+            return json.loads(PENDING_F.read_text())
+        except Exception:
+            return []
+    return []
+
+def save_pending_reels(pending):
+    PENDING_F.write_text(json.dumps(pending, ensure_ascii=False, indent=2))
+
+def inject_pending_reels(schedule):
+    """週次生成のカルーセルに、消化待ちリールを差し込む。
+    同じアプリの曜日のカルーセルをリールで置き換え、消化したぶんは
+    pending_reels.json から取り除く（毎週日曜の自動コミットで永続化）。
+    1週につき最大2本まで差し込む。"""
+    pending = load_pending_reels()
+    if not pending:
+        return
+    placed, remaining = 0, []
+    for reel in pending:
+        target_date = None
+        if placed < 2:
+            for d in sorted(schedule.keys()):
+                e = schedule[d]
+                if e.get("type") == "carousel" and e.get("app") == reel.get("app"):
+                    target_date = d
+                    break
+        if target_date:
+            schedule[target_date] = {
+                "type": "reel",
+                "app": reel["app"],
+                "app_label": reel.get("app_label", APPS[reel["app"]]["label"]),
+                "video_url": reel["video_url"],
+                "caption": reel["caption"],
+                "note": "reused_reel",
+            }
+            placed += 1
+            print(f"  リール差し込み: {target_date} {reel.get('app_label','')}")
+        else:
+            remaining.append(reel)   # 今週は置けなかった→次週へ持ち越し
+    save_pending_reels(remaining)
+
 def make_caption(app_key, q):
     app = APPS[app_key]
     nums = ["①", "②", "③", "④", "⑤"]
@@ -427,6 +472,9 @@ def main():
             "question_id": q["id"],
             "score": score,
         }
+
+    # 再利用待ちリールを差し込む（カルーセルを置き換え）
+    inject_pending_reels(schedule)
 
     SCHEDULE_F.write_text(json.dumps(schedule, ensure_ascii=False, indent=2))
     save_used(used)

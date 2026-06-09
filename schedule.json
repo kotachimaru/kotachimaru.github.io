@@ -26,56 +26,36 @@
     "score": 93
   },
   "2026-06-10": {
-    "type": "carousel",
+    "type": "reel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
-    "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20260608_3_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_3_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_3_s3.jpg"
-    ],
-    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n呼吸療法士として人工呼吸器装着患者を観察する際に最初に確認すべきことはどれか。\n\n① 人工呼吸器の設定パラメータ\n② 患者の意識レベル・胸郭の動き・SpO₂など患者の全体状態\n③ 加湿器の水位\n④ グラフィックモニターの波形\n⑤ 人工呼吸器の電源状態\n\n━━━━━━━━━━━━\n✅ 正解：② 患者の意識レベル・胸郭の動き・SpO₂など患者の全体状態\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法試験対策 #理学療法士",
-    "question_id": 304,
-    "score": 100
+    "video_url": "https://kotachimaru.github.io/reel_kokyuriha.mp4",
+    "caption": "【呼吸療法認定士試験】アプリで効率よく対策✅\n\n「全8章・310問」を収録した問題集アプリです📱\n\n✔ インストール不要・登録不要\n✔ スマホブラウザで今すぐ使える\n✔ 間違えた問題を自動で記録\n\nまず10問、無料でお試しできます🎯\n\nプロフのリンクから👆\n\n#3学会合同呼吸療法認定士 #呼吸療法 #理学療法士",
+    "note": "reused_reel"
   },
   "2026-06-11": {
-    "type": "carousel",
+    "type": "reel",
     "app": "shinriha",
     "app_label": "心リハ",
-    "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20260608_4_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_4_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_4_s3.jpg"
-    ],
-    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n心臓リハビリテーションの保険算定に関する記述として正しいのはどれか。\n\n① 入院中のみ算定できる\n② 急性心筋梗塞の算定期間は発症後90日以内である\n③ 慢性心不全は算定の適応外である\n④ 外来心臓リハは週5日まで算定できる\n⑤ 心大血管疾患リハビリテーション料Iは施設基準が必要である\n\n━━━━━━━━━━━━\n✅ 正解：⑤ 心大血管疾患リハビリテーション料Iは施設基準が必要である\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ試験対策 #理学療法士",
-    "question_id": 14,
-    "score": 100
+    "video_url": "https://kotachimaru.github.io/reel_quiz.mp4",
+    "caption": "【心リハ指導士試験】今日の1問⚡️\n\nβ遮断薬を投与中の心疾患患者の\n運動強度指標として最も適切なのはどれか？\n\n動画で一緒に考えてみてください👆\n\n正解と解説も後半に出てきます✅\n\n同じような問題が本番でも出ます\n「なぜそれが正解か」の理由まで理解するのが合格への近道です\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ試験対策 #理学療法士",
+    "note": "reused_reel"
   },
   "2026-06-12": {
-    "type": "carousel",
+    "type": "reel",
     "app": "jinriha",
     "app_label": "腎リハ",
-    "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20260608_5_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_5_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_5_s3.jpg"
-    ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\n移植患者の妊娠・出産について正しいのはどれか。\n\n① 全例禁忌\n② 移植腎機能安定（術後1-2年以上、Cr<1.5、蛋白尿少、無拒絶）であれば可能、計画妊娠が必要\n③ 妊娠中も全免疫抑制薬使用可\n④ 移植患者は妊娠不可\n⑤ 計画不要\n\n━━━━━━━━━━━━\n✅ 正解：② 移植腎機能安定（術後1-2年以上、Cr<1.5、蛋白尿少、無拒絶）であれば可能、計画妊娠が必要\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ試験対策 #理学療法士",
-    "question_id": 177,
-    "score": 100
+    "video_url": "https://kotachimaru.github.io/reel_jinriha.mp4",
+    "caption": "【腎リハ指導士試験】アプリで効率よく対策✅\n\n「全9章・370問」を収録した問題集アプリです📱\n\n✔ インストール不要・登録不要\n✔ スマホブラウザで今すぐ使える\n✔ 間違えた問題を自動で記録\n\nまず10問、無料でお試しできます🎯\n\nプロフのリンクから👆\n\n#腎臓リハビリテーション指導士 #腎リハ #理学療法士",
+    "note": "reused_reel"
   },
   "2026-06-13": {
-    "type": "carousel",
+    "type": "reel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
-    "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20260608_6_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_6_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20260608_6_s3.jpg"
-    ],
-    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n特発性肺線維症（IPF）の主な治療薬として認められているのはどれか。\n\n① テオフィリン + ステロイド\n② ピルフェニドン（ピレスパ）またはニンテダニブ（オフェブ）\n③ シクロスポリン + シクロホスファミド\n④ アジスロマイシン長期投与\n⑤ ICS + LABA合剤\n\n━━━━━━━━━━━━\n✅ 正解：② ピルフェニドン（ピレスパ）またはニンテダニブ（オフェブ）\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法試験対策 #理学療法士",
-    "question_id": 43,
-    "score": 100
+    "video_url": "https://kotachimaru.github.io/reel_quiz_kokyuriha.mp4",
+    "caption": "【呼吸療法認定士試験】今日の1問⚡️\n\nCOPD患者の呼吸リハビリで\n最も推奨される運動強度はどれか？\n\n動画で一緒に考えてみてください👆\n\n正解と解説も後半に出てきます✅\n\n同じような問題が本番でも出ます\n「なぜそれが正解か」の理由まで理解するのが合格への近道です\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法試験対策 #理学療法士",
+    "note": "reused_reel"
   },
   "2026-06-14": {
     "type": "carousel",
