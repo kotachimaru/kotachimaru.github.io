@@ -1,0 +1,32 @@
+name: X Auto Post
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # 毎日 21:00 JST (Instagram の 1 時間後)
+  workflow_dispatch:         # 手動実行（テスト用）
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests requests-oauthlib playwright
+          playwright install chromium --with-deps
+
+      - name: Post to X
+        env:
+          X_CONSUMER_KEY:        ${{ secrets.X_CONSUMER_KEY }}
+          X_CONSUMER_SECRET:     ${{ secrets.X_CONSUMER_SECRET }}
+          X_ACCESS_TOKEN:        ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python .github/scripts/x_post.py
