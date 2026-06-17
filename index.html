@@ -6,6 +6,16 @@
 <title>kotachi_maru | リハビリ試験対策アプリ</title>
 <meta property="og:title" content="kotachi_maru | リハビリ試験対策アプリ">
 <meta property="og:description" content="理学療法士による試験対策問題集アプリ。まず10問無料で試せます。">
+
+<!-- Google Analytics 4 ※ GA_ID を取得後に G-XXXXXXXXXX を置き換える -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -355,6 +365,16 @@ const PRODUCTS = [
 // =============================================
 
 const container = document.getElementById('products');
+
+// クリックイベント追跡（GA4）
+document.addEventListener('click', e => {
+  const noteBtn = e.target.closest('.btn-note');
+  const demoBtn = e.target.closest('.btn-demo');
+  if (noteBtn || demoBtn) {
+    const title = (noteBtn || demoBtn).closest('.card')?.querySelector('.card-title')?.textContent || '';
+    gtag('event', noteBtn ? 'purchase_click' : 'demo_click', { item_name: title });
+  }
+});
 
 PRODUCTS.forEach(p => {
   const card = document.createElement('div');
