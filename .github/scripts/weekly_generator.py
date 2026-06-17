@@ -478,7 +478,8 @@ def main():
 
     SCHEDULE_F.write_text(json.dumps(schedule, ensure_ascii=False, indent=2))
     save_used(used)
-    avg = sum(e["score"] for e in schedule.values()) / len(schedule)
+    scored = [e["score"] for e in schedule.values() if "score" in e]
+    avg = sum(scored) / len(scored) if scored else 0
     print(f"\nschedule.json 書き込み完了（{len(schedule)}件 / 平均スコア {avg:.0f}）")
     print("✅ 週次生成完了！")
 
