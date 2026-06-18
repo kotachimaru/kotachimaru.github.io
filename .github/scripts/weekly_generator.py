@@ -24,7 +24,7 @@ APPS = {
         "color": (59, 130, 246),       # BLUE
         "questions_url": "https://raw.githubusercontent.com/kotachimaru/shinriha/main/questions.js",
         "total": 220,
-        "hashtags": "#心臓リハビリテーション指導士 #心リハ試験対策 #理学療法士",
+        "hashtags": "#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
     },
     "jinriha": {
         "label": "腎リハ",
@@ -32,7 +32,7 @@ APPS = {
         "color": (139, 92, 246),       # PURPLE
         "questions_url": "https://raw.githubusercontent.com/kotachimaru/jinriha/main/questions.js",
         "total": 370,
-        "hashtags": "#腎臓リハビリテーション指導士 #腎リハ試験対策 #理学療法士",
+        "hashtags": "#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
     },
     "kokyuriha": {
         "label": "呼吸療法",
@@ -40,7 +40,7 @@ APPS = {
         "color": (6, 182, 212),        # CYAN
         "questions_url": "https://raw.githubusercontent.com/kotachimaru/kokyuriha/main/questions.js",
         "total": 310,
-        "hashtags": "#3学会合同呼吸療法認定士 #呼吸療法試験対策 #理学療法士",
+        "hashtags": "#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
     },
 }
 
