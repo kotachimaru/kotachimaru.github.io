@@ -19,7 +19,6 @@ auth = OAuth1(
 # ---- API エンドポイント ----
 UPLOAD_URL = "https://upload.twitter.com/1.1/media/upload.json"
 TWEET_URL  = "https://api.twitter.com/2/tweets"
-ME_URL     = "https://api.twitter.com/2/users/me"
 
 # ---- アプリ初期画面 URL ----
 APP_URLS = {
@@ -219,30 +218,6 @@ def post_tweet(text, media_id):
     print(f"  ✅ ツイート投稿完了！ ID: {j['data']['id']}")
 
 
-def get_my_user_id():
-    r = requests.get(ME_URL, auth=auth)
-    return r.json()["data"]["id"]
-
-
-def already_posted_today(today_str):
-    try:
-        uid = get_my_user_id()
-        today_dt = datetime.datetime.strptime(today_str, "%Y-%m-%d")
-        # JST 00:00 = UTC 前日 15:00
-        start_utc = today_dt - datetime.timedelta(hours=9)
-        start_time = start_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
-        r = requests.get(
-            f"https://api.twitter.com/2/users/{uid}/tweets",
-            auth=auth,
-            params={"max_results": 5, "start_time": start_time, "tweet.fields": "created_at"},
-        )
-        data = r.json().get("data", [])
-        return len(data) > 0
-    except Exception as e:
-        print(f"  投稿済みチェック失敗（続行）: {e}")
-    return False
-
-
 # ---- schedule.json からの取得 ----
 def get_from_schedule_json(today_str):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -263,10 +238,6 @@ if __name__ == "__main__":
     today_str = now_jst.strftime("%Y-%m-%d")
     print(f"現在時刻 (JST): {now_jst.strftime('%Y-%m-%d %H:%M')}")
     print(f"投稿日: {today_str}")
-
-    if already_posted_today(today_str):
-        print(f"本日（{today_str}）は既に投稿済みのためスキップします。")
-        sys.exit(0)
 
     # 1. schedule.json（自動生成）を優先
     entry = get_from_schedule_json(today_str)
