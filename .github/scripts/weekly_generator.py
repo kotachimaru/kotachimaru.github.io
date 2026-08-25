@@ -50,6 +50,23 @@ WEEKDAY_TO_APP = {
     3: "shinriha", 4: "jinriha", 5: "kokyuriha", 6: None,
 }
 
+# --- 試験カレンダー連動の重み付け（キャンペーン） ---
+JINRIHA_EXAM = datetime.date(2026, 10, 17)   # 第7回 腎リハ指導士
+KOKYU_EXAM   = datetime.date(2026, 11, 8)    # 第31回 呼吸療法認定士
+
+def app_for_date(d, sunday_app):
+    """試験日から逆算してその日のアプリを決める。
+    〜10/17: 腎リハ強化(週5) / 10/18〜11/8: 呼吸強化(週5) / 以降: 通常ローテ。"""
+    if d <= JINRIHA_EXAM:
+        return ["jinriha", "jinriha", "kokyuriha",
+                "jinriha", "jinriha", "kokyuriha", "jinriha"][d.weekday()]
+    if d <= KOKYU_EXAM:
+        return ["kokyuriha", "kokyuriha", "jinriha",
+                "kokyuriha", "kokyuriha", "jinriha", "kokyuriha"][d.weekday()]
+    base = {0: "shinriha", 1: "jinriha", 2: "kokyuriha",
+            3: "shinriha", 4: "jinriha", 5: "kokyuriha", 6: sunday_app}
+    return base[d.weekday()]
+
 BASE_DIR   = Path(__file__).parent.parent.parent   # kotachimaru.github.io/
 SCHEDULE_F = BASE_DIR / "schedule.json"
 USED_F     = BASE_DIR / "used_questions.json"
@@ -393,12 +410,22 @@ def inject_pending_reels(schedule):
             remaining.append(reel)   # 今週は置けなかった→次週へ持ち越し
     save_pending_reels(remaining)
 
-def make_caption(app_key, q):
+def make_caption(app_key, q, post_date=None):
     app = APPS[app_key]
     nums = ["①", "②", "③", "④", "⑤"]
     ci = q["answer"] - 1
     opts = "\n".join(f"{nums[i]} {o}" for i, o in enumerate(q["options"]))
-    return f"""【{app['full_label']}】今日の1問🔖
+    countdown = ""
+    if post_date is not None:
+        if app_key == "jinriha" and post_date <= JINRIHA_EXAM:
+            dleft = (JINRIHA_EXAM - post_date).days
+            if dleft > 0:
+                countdown = f"🗓 腎リハ指導士試験まであと{dleft}日\n\n"
+        elif app_key == "kokyuriha" and post_date <= KOKYU_EXAM:
+            dleft = (KOKYU_EXAM - post_date).days
+            if dleft > 0:
+                countdown = f"🗓 呼吸療法認定士試験まであと{dleft}日\n\n"
+    return f"""{countdown}【{app['full_label']}】今日の1問🔖
 
 {q['question']}
 
@@ -441,7 +468,7 @@ def main():
     print("\n各日の生成（監査ループつき）:")
     for off in range(7):
         d = next_monday + datetime.timedelta(days=off)
-        app_key = WEEKDAY_TO_APP[d.weekday()]
+        app_key = app_for_date(d, sunday_app)
         day_ja = "月火水木金土日"[d.weekday()]
         print(f"\n  {d}（{day_ja}）{APPS[app_key]['label']}")
 
@@ -468,7 +495,7 @@ def main():
             "app": app_key,
             "app_label": APPS[app_key]["label"],
             "slides": [f"{MEDIA}/carousel/{p}" for p in paths],
-            "caption": make_caption(app_key, q),
+            "caption": make_caption(app_key, q, d),
             "question_id": q["id"],
             "score": score,
         }
