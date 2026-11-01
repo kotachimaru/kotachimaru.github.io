@@ -322,6 +322,7 @@ const PRODUCTS = [
     questions: 220,
     status: "live",          // "live" | "coming"
     demoUrl: "https://kotachimaru.github.io/shinriha/",
+    examDate: "2027-07-19",   // 並び替え専用（表示には使わない）
     noteUrl: "https://note.com/kotachi_no_heya/n/n40ae3b3ff320",
     price: "買い切り¥1,800 / 月額¥980",
   },
@@ -333,6 +334,7 @@ const PRODUCTS = [
     questions: 370,
     status: "live",
     demoUrl: "https://kotachimaru.github.io/jinriha/",
+    examDate: "2027-10-16",   // 並び替え専用（表示には使わない）
     noteUrl: "https://note.com/kotachi_no_heya/n/n226067c84223",
     price: "買い切り¥1,800 / 月額¥980",
   },
@@ -344,6 +346,7 @@ const PRODUCTS = [
     questions: 315,
     status: "live",
     demoUrl: "https://kotachimaru.github.io/kokyuriha/",
+    examDate: "2026-11-08",   // 並び替え専用（表示には使わない）
     noteUrl: "https://note.com/kotachi_no_heya/n/nadeb466f7aba",
     price: "買い切り¥1,800 / 月額¥980",
   },
@@ -355,6 +358,7 @@ const PRODUCTS = [
     questions: 306,
     status: "live",
     demoUrl: "https://kotachimaru.github.io/shinfuzen/",
+    examDate: "2026-12-20",   // 並び替え専用（表示には使わない）
     noteUrl: "https://note.com/kotachi_no_heya/n/n492d5a91ada0",
     price: "買い切り¥1,800 / 月額¥980",
   },
@@ -375,7 +379,19 @@ document.addEventListener('click', e => {
   }
 });
 
-PRODUCTS.forEach(p => {
+// 試験日が近い順に自動で並び替える。
+// 日付が過ぎたら翌年の同時期とみなすので、毎年の手直しが不要。
+function nextExamDate(iso) {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const d = new Date(iso + 'T00:00:00');
+  while (d < today) d.setFullYear(d.getFullYear() + 1);
+  return d;
+}
+const ORDERED_PRODUCTS = PRODUCTS.slice().sort(
+  (a, b) => nextExamDate(a.examDate) - nextExamDate(b.examDate)
+);
+
+ORDERED_PRODUCTS.forEach(p => {
   const card = document.createElement('div');
   card.className = 'card' + (p.status === 'coming' ? ' coming' : '');
 
