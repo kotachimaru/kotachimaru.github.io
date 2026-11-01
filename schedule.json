@@ -1,93 +1,93 @@
 {
-  "2026-10-26": {
+  "2026-11-09": {
     "type": "carousel",
-    "app": "kokyuriha",
-    "app_label": "呼吸療法",
+    "app": "shinriha",
+    "app_label": "心リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_1_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_1_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_1_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_1_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_1_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_1_s3.jpg"
     ],
-    "caption": "🗓 呼吸療法認定士試験まであと13日\n\n【3学会合同呼吸療法認定士】今日の1問🔖\n\n気管支拡張（アルブテロールなど）の人工呼吸回路内への吸入療法について正しいのはどれか。\n\n① 気管チューブ挿管中は薬剤の肺内沈着が大幅に増加する\n② 一般的にはネブライザーまたはpMDIをYピース付近に接続して行い、換気と同期させる\n③ 人工呼吸中は吸入療法が禁忌である\n④ 吸入後は気管吸引を直ちに行う必要がある\n⑤ 高流量では薬剤沈着率が増加する\n\n━━━━━━━━━━━━\n✅ 正解：② 一般的にはネブライザーまたはpMDIをYピース付近に接続して行い、換気と同期させる\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 97,
+    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\nCPXにおけるRCP（呼吸代償点）に関する記述として正しいのはどれか。\n\n① RCPとATは同義であり同じ時点で出現する\n② RCPはVE/VCO2が上昇し始める点として定義される\n③ RCPはATより高い運動強度で出現する\n④ RCPはすべての患者で明確に同定できる\n⑤ RCPはpeakVO2と同じタイミングで出現する\n\n━━━━━━━━━━━━\n✅ 正解：③ RCPはATより高い運動強度で出現する\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
+    "question_id": 117,
     "score": 100
   },
-  "2026-10-27": {
-    "type": "carousel",
-    "app": "kokyuriha",
-    "app_label": "呼吸療法",
-    "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_2_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_2_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_2_s3.jpg"
-    ],
-    "caption": "🗓 呼吸療法認定士試験まであと12日\n\n【3学会合同呼吸療法認定士】今日の1問🔖\n\nファイティング（人工呼吸器との非同調）の原因として最も多いのはどれか。\n\n① 過剰鎮静\n② 患者のトリガー感度が高すぎる場合\n③ 患者の自発呼吸と人工呼吸器の換気タイミングのずれ\n④ 人工呼吸器の設定が高いPEEPである\n⑤ 酸素濃度が低い場合\n\n━━━━━━━━━━━━\n✅ 正解：③ 患者の自発呼吸と人工呼吸器の換気タイミングのずれ\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 244,
-    "score": 100
-  },
-  "2026-10-28": {
+  "2026-11-10": {
     "type": "carousel",
     "app": "jinriha",
     "app_label": "腎リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_3_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_3_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_3_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_2_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_2_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_2_s3.jpg"
     ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\n透析患者のCKD-MBD管理目標として誤っているものはどれか。\n\n① 血清P：3.5-6.0 mg/dL\n② 補正Ca：8.4-10.0 mg/dL\n③ intact PTH：60-240 pg/mL\n④ 血管石灰化の進行抑制\n⑤ 高P血症の放置\n\n━━━━━━━━━━━━\n✅ 正解：⑤ 高P血症の放置\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
-    "question_id": 134,
+    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\n腎リハの最終アウトカム（patient-important outcome）として、ガイドラインで最重視されるものはどれか。\n\n① eGFRの改善\n② 蛋白尿の減少\n③ 生命予後・心血管イベント・QOL\n④ 運動負荷試験の最高酸素摂取量\n⑤ 握力の増加\n\n━━━━━━━━━━━━\n✅ 正解：③ 生命予後・心血管イベント・QOL\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
+    "question_id": 30,
     "score": 100
   },
-  "2026-10-29": {
+  "2026-11-11": {
     "type": "carousel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_4_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_4_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_4_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_3_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_3_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_3_s3.jpg"
     ],
-    "caption": "🗓 呼吸療法認定士試験まであと10日\n\n【3学会合同呼吸療法認定士】今日の1問🔖\n\n医療倫理の4原則に含まれないのはどれか。\n\n① 自律性の尊重（respect for autonomy）\n② 善行（beneficence）\n③ 無危害（non-maleficence）\n④ 公正・正義（justice）\n⑤ 利益の最大化（profit maximization）\n\n━━━━━━━━━━━━\n✅ 正解：⑤ 利益の最大化（profit maximization）\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 293,
+    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n新生児の人工呼吸で、サーファクタント補充療法の適応となるのはどれか。\n\n① 感染症による肺炎\n② 肺サーファクタント欠乏による呼吸窮迫症候群（RDS）\n③ 胎便吸引症候群（MAS）の全例\n④ 先天性心疾患による肺高血圧\n⑤ 慢性肺疾患（CLD）の長期管理\n\n━━━━━━━━━━━━\n✅ 正解：② 肺サーファクタント欠乏による呼吸窮迫症候群（RDS）\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
+    "question_id": 144,
     "score": 100
   },
-  "2026-10-30": {
+  "2026-11-12": {
     "type": "carousel",
-    "app": "kokyuriha",
-    "app_label": "呼吸療法",
+    "app": "shinriha",
+    "app_label": "心リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_5_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_5_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_5_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_4_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_4_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_4_s3.jpg"
     ],
-    "caption": "🗓 呼吸療法認定士試験まであと9日\n\n【3学会合同呼吸療法認定士】今日の1問🔖\n\n呼吸療法に関わる薬剤管理として正しいのはどれか。\n\n① 気管支拡張薬の吸入は空腹時のみ効果がある\n② ステロイド吸入後は口腔カンジダ予防のためうがいが必要\n③ テオフィリンの血中濃度モニタリングは不要\n④ β₂刺激薬吸入は心臓には無影響\n⑤ 吸入薬はすべてスペーサーなしで使用する\n\n━━━━━━━━━━━━\n✅ 正解：② ステロイド吸入後は口腔カンジダ予防のためうがいが必要\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 312,
+    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n遠隔心臓リハビリテーション（テレリハビリテーション）に関する記述として正しいのはどれか。\n\n① テレリハビリテーションは通所型心臓リハビリテーションより常に効果が低い\n② テレリハビリテーションは通院困難な地域・患者への心臓リハビリテーション提供に有用である\n③ テレリハビリテーション中の心電図モニタリングは技術的に不可能である\n④ 日本ではテレリハビリテーションは法律で全面禁止されている\n⑤ テレリハビリテーションはすべての患者に対して通所型より優れている\n\n━━━━━━━━━━━━\n✅ 正解：② テレリハビリテーションは通院困難な地域・患者への心臓リハビリテーション提供に有用である\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
+    "question_id": 191,
     "score": 100
   },
-  "2026-10-31": {
+  "2026-11-13": {
     "type": "carousel",
     "app": "jinriha",
     "app_label": "腎リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_6_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_6_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_6_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_5_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_5_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_5_s3.jpg"
     ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\nCKD患者の貧血で主因となるのはどれか。\n\n① 鉄欠乏\n② ビタミンB12欠乏\n③ エリスロポエチン産生低下\n④ 葉酸欠乏\n⑤ 骨髄抑制\n\n━━━━━━━━━━━━\n✅ 正解：③ エリスロポエチン産生低下\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
-    "question_id": 44,
+    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\nCKD G3-G5患者のエネルギー摂取量目標として一般的なのはどれか。\n\n① 10-15 kcal/kg/日\n② 20-25 kcal/kg/日\n③ 25-35 kcal/kg/日\n④ 40-50 kcal/kg/日\n⑤ 60-70 kcal/kg/日\n\n━━━━━━━━━━━━\n✅ 正解：③ 25-35 kcal/kg/日\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
+    "question_id": 183,
     "score": 93
   },
-  "2026-11-01": {
+  "2026-11-14": {
     "type": "carousel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261026_7_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_7_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261026_7_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261109_6_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_6_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_6_s3.jpg"
     ],
-    "caption": "🗓 呼吸療法認定士試験まであと7日\n\n【3学会合同呼吸療法認定士】今日の1問🔖\n\nBNP（脳性ナトリウム利尿ペプチド）が心不全診断に有用な理由として正しいのはどれか。\n\n① 心筋壊死のマーカーとして高感度である\n② 心室壁ストレスの増大により心筋から分泌され、心不全の重症度と相関する\n③ 感染症の急性期反応蛋白として上昇する\n④ 腎機能障害のマーカーである\n⑤ 肺塞栓症の特異的マーカーである\n\n━━━━━━━━━━━━\n✅ 正解：② 心室壁ストレスの増大により心筋から分泌され、心不全の重症度と相関する\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 57,
+    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\nARDSにおけるPplat（プラトー圧）の管理目標として正しいのはどれか。\n\n① 40 cmH₂O以下\n② 30 cmH₂O以下\n③ 25 cmH₂O以下\n④ 20 cmH₂O以下\n⑤ 15 cmH₂O以下\n\n━━━━━━━━━━━━\n✅ 正解：② 30 cmH₂O以下\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
+    "question_id": 80,
+    "score": 100
+  },
+  "2026-11-15": {
+    "type": "carousel",
+    "app": "shinriha",
+    "app_label": "心リハ",
+    "slides": [
+      "https://kotachimaru.github.io/carousel/auto_20261109_7_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_7_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261109_7_s3.jpg"
+    ],
+    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n運動と食事に関する指導内容として正しいのはどれか。\n\n① 運動前は食事をとらないほうがよい\n② 運動の2〜3時間前に食事をとることが推奨される\n③ 食直後（30分以内）の激しい運動は問題ない\n④ 低血糖の既往がある患者には糖質補給の指導は不要である\n⑤ 飲酒後でも心拍数が安定していれば運動可能である\n\n━━━━━━━━━━━━\n✅ 正解：② 運動の2〜3時間前に食事をとることが推奨される\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
+    "question_id": 172,
     "score": 100
   }
 }
