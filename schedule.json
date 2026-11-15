@@ -1,93 +1,93 @@
 {
-  "2026-11-16": {
+  "2026-11-23": {
     "type": "carousel",
     "app": "shinriha",
     "app_label": "心リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_1_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_1_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_1_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_1_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_1_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_1_s3.jpg"
     ],
-    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n水中運動療法（アクアセラピー）の特徴として正しいのはどれか。\n\n① 水中では浮力により関節への負荷が増大するため整形外科的問題のある患者には不向きである\n② 水中では静水圧により末梢からの静脈還流が増加し前負荷が増大する\n③ 温水（33〜35℃）は末梢血管収縮を引き起こし後負荷が増大する\n④ 水中での有酸素運動は陸上より同一強度での心拍数が高くなる\n⑤ 代償性心不全患者への水中運動は全例禁忌である\n\n━━━━━━━━━━━━\n✅ 正解：② 水中では静水圧により末梢からの静脈還流が増加し前負荷が増大する\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
-    "question_id": 155,
+    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n大動脈疾患（大動脈解離・大動脈瘤）と心臓リハビリテーションに関する記述として正しいのはどれか。\n\n① 急性大動脈解離（活動期）はCPXの絶対禁忌に含まれる\n② 大動脈解離後は血圧管理が不要である\n③ 大動脈瘤（未治療の大動脈瘤）患者に対して高強度運動は問題ない\n④ 大動脈解離手術後は終生運動療法が禁忌である\n⑤ 大動脈解離後のリハビリテーションでは収縮期血圧の上限を設けない\n\n━━━━━━━━━━━━\n✅ 正解：① 急性大動脈解離（活動期）はCPXの絶対禁忌に含まれる\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
+    "question_id": 73,
     "score": 100
   },
-  "2026-11-17": {
+  "2026-11-24": {
     "type": "carousel",
     "app": "jinriha",
     "app_label": "腎リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_2_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_2_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_2_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_2_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_2_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_2_s3.jpg"
     ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\nCKD患者で運動継続によって減少が期待されるバイオマーカーはどれか。\n\n① 高感度CRP・炎症性サイトカイン（IL-6など）\n② 全シスタチンC\n③ ヘモグロビンA1c（必発で）\n④ アルブミン（低下する）\n⑤ 全血Na\n\n━━━━━━━━━━━━\n✅ 正解：① 高感度CRP・炎症性サイトカイン（IL-6など）\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
-    "question_id": 109,
-    "score": 93
+    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\nCKD患者の水分摂取で適切なのはどれか。\n\n① 全例厳格制限\n② 保存期は十分な水分摂取が原則、心不全・末期では個別調整\n③ ペットボトル禁止\n④ 全例 500mL/日制限\n⑤ 自由\n\n━━━━━━━━━━━━\n✅ 正解：② 保存期は十分な水分摂取が原則、心不全・末期では個別調整\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
+    "question_id": 200,
+    "score": 100
   },
-  "2026-11-18": {
+  "2026-11-25": {
     "type": "carousel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_3_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_3_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_3_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_3_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_3_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_3_s3.jpg"
     ],
-    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n高流量鼻カニューレ（HFNC）の酸素投与量として設定可能な流量の上限として最も適切なのはどれか。\n\n① 5 L/分\n② 15 L/分\n③ 60 L/分\n④ 100 L/分\n⑤ 10 L/分\n\n━━━━━━━━━━━━\n✅ 正解：③ 60 L/分\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 107,
+    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n肺癌の組織型で「中心型」が多く、リンパ節転移が早期から起こりやすいのはどれか。\n\n① 腺癌\n② 大細胞癌\n③ 扁平上皮癌\n④ 小細胞癌\n⑤ カルチノイド\n\n━━━━━━━━━━━━\n✅ 正解：③ 扁平上皮癌\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
+    "question_id": 50,
     "score": 100
   },
-  "2026-11-19": {
+  "2026-11-26": {
     "type": "carousel",
     "app": "shinriha",
     "app_label": "心リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_4_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_4_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_4_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_4_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_4_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_4_s3.jpg"
     ],
-    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\n肺高血圧症の分類（WHO分類）に関する記述として正しいのはどれか。\n\n① 肺動脈性肺高血圧症（PAH）はWHO分類のグループ1に含まれる\n② 左心疾患に伴う肺高血圧症はグループ1（PAH）に含まれる\n③ 肺高血圧症の定義は肺動脈圧≧25mmHgとされてきたが、近年の指針では20mmHgに変更された\n④ 肺高血圧症患者への運動療法は全て禁忌である\n⑤ 肺高血圧症の主な症状は発熱・関節痛である\n\n━━━━━━━━━━━━\n✅ 正解：③ 肺高血圧症の定義は肺動脈圧≧25mmHgとされてきたが、近年の指針では20mmHgに変更された\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
-    "question_id": 68,
+    "caption": "【心臓リハビリテーション指導士】今日の1問🔖\n\nCPX中の運動時間に関する記述として正しいのはどれか。\n\n① 客観的指標で決定されるため再現性が高い\n② 心不全の評価として感度が高い\n③ ガス交換比（R）＞1.0〜1.15であればほぼ最大努力と判断できる\n④ 最大酸素摂取量より感度が高い評価指標である\n⑤ 運動時間が長いほど常に心機能が良好であることを示す\n\n━━━━━━━━━━━━\n✅ 正解：③ ガス交換比（R）＞1.0〜1.15であればほぼ最大努力と判断できる\n━━━━━━━━━━━━\n\n問題集（全220問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#心臓リハビリテーション指導士 #心リハ指導士 #心リハ #循環器理学療法 #理学療法士",
+    "question_id": 100,
     "score": 100
   },
-  "2026-11-20": {
+  "2026-11-27": {
     "type": "carousel",
     "app": "jinriha",
     "app_label": "腎リハ",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_5_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_5_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_5_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_5_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_5_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_5_s3.jpg"
     ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\n透析患者の心血管合併症として最多はどれか。\n\n① 弁膜症のみ\n② 心不全・冠動脈疾患・左室肥大・不整脈・血管石灰化\n③ 先天性心疾患\n④ 心筋症のみ\n⑤ 心膜疾患のみ\n\n━━━━━━━━━━━━\n✅ 正解：② 心不全・冠動脈疾患・左室肥大・不整脈・血管石灰化\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
-    "question_id": 131,
+    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\nCKDステージG4（GFR 15〜29）患者の管理で適切でないものはどれか。\n\n① 透析・移植の準備教育\n② 高P血症の管理\n③ 貧血治療（ESA・HIF-PH阻害薬）\n④ 厳格な蛋白制限（<0.4 g/kg/日）の長期実施\n⑤ 内シャント造設の検討\n\n━━━━━━━━━━━━\n✅ 正解：④ 厳格な蛋白制限（<0.4 g/kg/日）の長期実施\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
+    "question_id": 59,
     "score": 93
   },
-  "2026-11-21": {
+  "2026-11-28": {
     "type": "carousel",
     "app": "kokyuriha",
     "app_label": "呼吸療法",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_6_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_6_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_6_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_6_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_6_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_6_s3.jpg"
     ],
-    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n気胸の緊急処置として最初に行うのはどれか。\n\n① 胸腔鏡手術\n② 抗菌薬投与\n③ 胸腔ドレナージ（緊張性気胸の場合は即座に脱気）\n④ 呼吸リハビリテーション\n⑤ 気管支鏡検査\n\n━━━━━━━━━━━━\n✅ 正解：③ 胸腔ドレナージ（緊張性気胸の場合は即座に脱気）\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
-    "question_id": 232,
+    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\nECMO（体外式膜型人工肺）の適応基準における酸素化指数（OI）の閾値として正しいのはどれか。\n\n① OI≧5で適応\n② OI≧10で適応\n③ OI≧20で適応（4時間以上継続）\n④ OI≧30で適応\n⑤ OI≧40で適応\n\n━━━━━━━━━━━━\n✅ 正解：③ OI≧20で適応（4時間以上継続）\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
+    "question_id": 290,
     "score": 100
   },
-  "2026-11-22": {
+  "2026-11-29": {
     "type": "carousel",
-    "app": "jinriha",
-    "app_label": "腎リハ",
+    "app": "kokyuriha",
+    "app_label": "呼吸療法",
     "slides": [
-      "https://kotachimaru.github.io/carousel/auto_20261116_7_s1.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_7_s2.jpg",
-      "https://kotachimaru.github.io/carousel/auto_20261116_7_s3.jpg"
+      "https://kotachimaru.github.io/carousel/auto_20261123_7_s1.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_7_s2.jpg",
+      "https://kotachimaru.github.io/carousel/auto_20261123_7_s3.jpg"
     ],
-    "caption": "【腎臓リハビリテーション指導士】今日の1問🔖\n\n高K血症の心電図所見として典型的なのはどれか。\n\n① P波増高\n② ST上昇\n③ テント状T波\n④ U波出現\n⑤ 軽症のみQT短縮\n\n━━━━━━━━━━━━\n✅ 正解：③ テント状T波\n━━━━━━━━━━━━\n\n問題集（全370問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#腎臓リハビリテーション指導士 #腎リハ指導士 #腎リハ #CKD #理学療法士",
-    "question_id": 302,
-    "score": 85
+    "caption": "【3学会合同呼吸療法認定士】今日の1問🔖\n\n在宅人工呼吸患者の定期検診で行うべき内容として誤っているのはどれか。\n\n① 血液・尿検査\n② 定期採血（血液ガス分析含む）\n③ 胸部エックス線\n④ スパイロメトリー\n⑤ 毎日の自宅訪問\n\n━━━━━━━━━━━━\n✅ 正解：⑤ 毎日の自宅訪問\n━━━━━━━━━━━━\n\n問題集（全310問）はプロフのリンクから🔗\nまず10問、無料でお試しできます\n\n#3学会合同呼吸療法認定士 #呼吸療法認定士 #呼吸療法 #呼吸リハビリ #理学療法士",
+    "question_id": 201,
+    "score": 100
   }
 }
